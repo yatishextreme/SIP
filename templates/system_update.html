@@ -1,6 +1,6 @@
 $def with(m_vals)
 
-$var title: SIP Update from GitHub
+$var title: Smart F1 software update
 $var page: system_update
 <script>
 
@@ -22,7 +22,7 @@ $var page: system_update
 </script>
 
 <div id="plugin">
-    <div class="title">$_('SIP Software Updater')
+    <div class="title">$_('Smart F1 Software Updater')
     <button class="execute" id="docButton" type="button" >$_('Help')</button>
     </div>
     <!--<p>$_('This plugin compares the local SIP version with the GitHub repository and can update the local software.')</p>-->
@@ -35,13 +35,13 @@ $var page: system_update
                 </td>
             </tr>
             <tr>
-                <td style='text-transform: none;'><b>$_('Local SIP version'):</b></td>
+                <td style='text-transform: none;'><b>$_('Installed software version'):</b></td>
                 <td>
                      $m_vals["ver_str"]
                 </td>
             </tr>
             <tr>
-                <td style='text-transform: none;'><b>$_('Local SIP date'):</b></td>
+                <td style='text-transform: none;'><b>$_('Installed software date'):</b></td>
                 <td>
                      $m_vals["ver_date"]
                 </td>
@@ -59,9 +59,9 @@ $var page: system_update
 </div>
 <div id="controls">
     $if m_vals['can_update']:
-        <button id="cUpdate" class="options"><b>$_('Update SIP')</b></button>
+        <button id="cUpdate" class="options"><b>$_('Update Smart F1 software')</b></button>
     $else:
         <button id="cUpToDate" class="cancel"><b>$_('Up-to-date')</b></button>
-    <!--<button id="cReboot" class="reboot danger">$_('Restart SIP')</button>-->
+    <!--<button id="cReboot" class="reboot danger">$_('Restart Smart F1')</button>-->
     <button id="cCancel" class="cancel danger">$_('Cancel')</button>
 </div>
