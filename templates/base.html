@@ -170,8 +170,8 @@ $code:
         </div>
         <div class="footer">
             <div>
-                /*$if content.page != 'login':
-                <button id="bHelp" class="help" title=$:{json.dumps(_('Help'), ensure_ascii=False)}>$_('?')</button> */
+                $if content.page != 'login':
+                <button id="bHelp" class="help" title=$:{json.dumps(_('Help'), ensure_ascii=False)}>$_('?')</button> 
             </div>
                 <p>$_('System Temp'): <b><span id="heat" style="cursor:pointer" title=$:{json.dumps(_('Click to toggle'), ensure_ascii=False)} + ' Celsius &lt;&gt; Fahrenheit'></span></b></p>
                 <p><a target="_blank" href="https://github.com/yatishextreme/Smart-F1">$_('Software')</a> $_('version'): <b>${gv.ver_str} (${gv.ver_date})</b></p>
