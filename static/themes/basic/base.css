@@ -24,7 +24,7 @@ div.header {
 	background-image: url('logo.png'); 
 	background-repeat: no-repeat;
 	background-position: 64px 8px;
-	background-color: #32A620;
+	background-color: #FFFFFF;
 	height:80px;
 }
 
@@ -46,7 +46,7 @@ div.header div.titlenote {
 
 div.footer {
 	/*background-image: url(grass.jpg);*/
-	background-position: top right -200px;
+	/background-position: top right -20px;
 	background-repeat: no-repeat;
 	background-color: #32A620;
 	color:white;
